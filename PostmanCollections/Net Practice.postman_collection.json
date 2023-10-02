@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "ecef4ca6-1713-47d4-a888-9884fde500d6",
+		"name": "Net Practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7684798"
+	},
+	"item": [
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"LastName\": \"Pena\",\r\n    \"FirstName\": \"Alejandro\",\r\n    \"Title\": \"Developer\",\r\n    \"TitleOfCourtesy\": \"Developer\",\r\n    \"BirthDate\": \"1998-04-07\",\r\n    \"HireDate\": \"2022-12-12\",\r\n    \"Address\": \"Los lobos\",\r\n    \"City\": \"Tijuana\",\r\n    \"Region\": \"Baja California\",\r\n    \"PostalCode\": \"202123\",\r\n    \"Country\": \"Mexico\",\r\n    \"HomePhone\": \"6641231234\",\r\n    \"Extension\": \"52\",\r\n    \"Notes\": \"Nothing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44362/api/Employees/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Employees",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CustomerId\": \"AFAK\",\r\n    \"CompanyName\": \"Alejandro's company\",\r\n    \"ContactName\": \"Alex\",\r\n    \"ContactTitle\": \"Alex Developer\",\r\n    \"Address\": \"Los lobos\",\r\n    \"City\": \"Tijuana\",\r\n    \"Region\": \"Baja California\",\r\n    \"PostalCode\": \"2021312\",\r\n    \"Country\": \"Mexico\",\r\n    \"Phone\": \"6641231234\",\r\n    \"Fax\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44362/api/Customers/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Customers",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CustomerID\": \"ANATR\",\r\n    \"EmployeeID\": 1,\r\n    \"OrderDate\": \"2023-05-05\",\r\n    \"RequiredDate\": \"2023-05-05\",\r\n    \"ShippedDate\": \"2023-05-05\",\r\n    \"ShipVia\": null,\r\n    \"Freight\": null,\r\n    \"ShipName\": \"Sample ship name\",\r\n    \"ShipAddress\": \"Sample ship address\",\r\n    \"ShipCity\": \"Sample city\",\r\n    \"ShipRegion\": \"Sample region\",\r\n    \"ShipPostalCode\": \"12345\",\r\n    \"ShipCountry\": \"Mexico\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44362/api/Orders/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Orders",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"OrderId\": 10248,\r\n    \"ProductId\": 1,\r\n    \"UnitPrice\": 2,\r\n    \"Quantity\": 1,\r\n    \"Discount\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44362/api/OrderDetails/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"OrderDetails",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44362/api/Employees/Read/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Employees",
+						"Read",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44362/api/Customers/Read/AFAK",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Customers",
+						"Read",
+						"AFAK"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44362/api/Orders/Read/10249",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Orders",
+						"Read",
+						"10249"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Order Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44362/api/OrderDetails/Read?orderId=10248&productId=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"OrderDetails",
+						"Read"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "10248"
+						},
+						{
+							"key": "productId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44362/api/Employees/Delete/13",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Employees",
+						"Delete",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44362/api/Customers/Delete/AFAK",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Customers",
+						"Delete",
+						"AFAK"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44362/api/Orders/Delete/11078",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Orders",
+						"Delete",
+						"11078"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Order Details",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44362/api/OrderDetails/Delete?orderId=10248&productId=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"OrderDetails",
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "10248"
+						},
+						{
+							"key": "productId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeId\": 13,\r\n    \"LastName\": \"Pena\",\r\n    \"FirstName\": \"Alejandro\",\r\n    \"Title\": \"Developer\",\r\n    \"TitleOfCourtesy\": \"Developer\",\r\n    \"BirthDate\": \"1998-04-07\",\r\n    \"HireDate\": \"2022-12-12\",\r\n    \"Address\": \"Los lobos\",\r\n    \"City\": \"Tijuana\",\r\n    \"Region\": \"Baja California\",\r\n    \"PostalCode\": \"202123\",\r\n    \"Country\": \"Mexico\",\r\n    \"HomePhone\": \"6641231234\",\r\n    \"Extension\": \"52\",\r\n    \"Notes\": \"Nothing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44362/api/Employees/Update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Employees",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CustomerId\": \"AFAK\",\r\n    \"CompanyName\": \"Alejandro's company (2)\",\r\n    \"ContactName\": \"Alex\",\r\n    \"ContactTitle\": \"Alex Developer\",\r\n    \"Address\": \"Los lobos\",\r\n    \"City\": \"Tijuana\",\r\n    \"Region\": \"Baja California\",\r\n    \"PostalCode\": \"2021312\",\r\n    \"Country\": \"Mexico\",\r\n    \"Phone\": \"6641231234\",\r\n    \"Fax\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44362/api/Customers/Update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Customers",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"OrderID\": 11079,\r\n    \"CustomerID\": \"ANATR\",\r\n    \"EmployeeID\": 1,\r\n    \"OrderDate\": \"2023-05-05\",\r\n    \"RequiredDate\": \"2023-05-05\",\r\n    \"ShippedDate\": \"2023-05-05\",\r\n    \"ShipVia\": null,\r\n    \"Freight\": null,\r\n    \"ShipName\": \"Sample ship name (2)\",\r\n    \"ShipAddress\": \"Sample ship address\",\r\n    \"ShipCity\": \"Sample city\",\r\n    \"ShipRegion\": \"Sample region\",\r\n    \"ShipPostalCode\": \"12345\",\r\n    \"ShipCountry\": \"Mexico\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44362/api/Orders/Update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"Orders",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Order Details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"OrderId\": 10248,\r\n    \"ProductId\": 1,\r\n    \"UnitPrice\": 3,\r\n    \"Quantity\": 1,\r\n    \"Discount\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44362/api/OrderDetails/Update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44362",
+					"path": [
+						"api",
+						"OrderDetails",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

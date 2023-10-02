@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="GlobalUsings.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="GlobalUsings.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetPractice.Backend\DotNetPractice.Backend.csproj" />
+    <ProjectReference Include="..\DotNetPractice.DataAccess\DotNetPractice.DataAccess.csproj" />
+    <ProjectReference Include="..\DotNetPractice.DataModel\DotNetPractice.DataModel.csproj" />
+  </ItemGroup>
+
+
+</Project>
