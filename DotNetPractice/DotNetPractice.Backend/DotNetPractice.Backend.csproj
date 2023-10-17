@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DotNetPractice.DataAccess\DotNetPractice.DataAccess.csproj" />
     <ProjectReference Include="..\DotNetPractice.DataModel\DotNetPractice.DataModel.csproj" />
   </ItemGroup>

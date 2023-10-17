@@ -53,7 +53,7 @@ namespace DotNetPractice.DataModel
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=Northwind;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=Northwind;Trusted_Connection=True;TrustServerCertificate=True;");
             }
         }
 

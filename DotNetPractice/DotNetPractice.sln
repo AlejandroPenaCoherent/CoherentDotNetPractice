@@ -5,11 +5,13 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetPractice", "DotNetPractice\DotNetPractice.csproj", "{86F2702A-EA8F-435B-8E3A-B27271980E3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPractice.DataModel", "DotNetPractice.DataModel\DotNetPractice.DataModel.csproj", "{255809A5-8FFF-4AEA-9BE5-4A579E7DD06D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetPractice.DataModel", "DotNetPractice.DataModel\DotNetPractice.DataModel.csproj", "{255809A5-8FFF-4AEA-9BE5-4A579E7DD06D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPractice.DataAccess", "DotNetPractice.DataAccess\DotNetPractice.DataAccess.csproj", "{94041471-7FBA-4D92-9703-F9AA356712E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetPractice.DataAccess", "DotNetPractice.DataAccess\DotNetPractice.DataAccess.csproj", "{94041471-7FBA-4D92-9703-F9AA356712E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPractice.Backend", "DotNetPractice.Backend\DotNetPractice.Backend.csproj", "{6DB06068-C215-4F8D-94FF-6C8EEF6FB947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetPractice.Backend", "DotNetPractice.Backend\DotNetPractice.Backend.csproj", "{6DB06068-C215-4F8D-94FF-6C8EEF6FB947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{0DCE7B4D-19B1-437B-BF5F-DF2005F580B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6DB06068-C215-4F8D-94FF-6C8EEF6FB947}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DB06068-C215-4F8D-94FF-6C8EEF6FB947}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DB06068-C215-4F8D-94FF-6C8EEF6FB947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DCE7B4D-19B1-437B-BF5F-DF2005F580B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DCE7B4D-19B1-437B-BF5F-DF2005F580B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DCE7B4D-19B1-437B-BF5F-DF2005F580B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DCE7B4D-19B1-437B-BF5F-DF2005F580B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

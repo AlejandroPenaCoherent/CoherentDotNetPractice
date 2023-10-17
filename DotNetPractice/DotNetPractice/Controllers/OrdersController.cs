@@ -1,7 +1,6 @@
-﻿using DotNetPractice.Backend.Services;
-using DotNetPractice.Backend.Services.Interfaces;
+﻿using DotNetPractice.Backend.Services.Interfaces;
 using DotNetPractice.DataModel;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Threading.Tasks;
@@ -10,6 +9,7 @@ namespace DotNetPractice.Controllers
 {
     [Route("api/Orders")]
     [ApiController]
+    [Authorize]
     public class OrdersController : ControllerBase
     {
         private readonly IOrdersService _ordersService;
